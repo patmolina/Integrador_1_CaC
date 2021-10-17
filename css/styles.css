@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-nav a {
+    text-align: center;
+}
+
+#principal {
+    position: relative;
+}
+
+#principal img {
+    margin-top: -125px;
+    height: 700px; 
+    width: 100%; 
+    filter: contrast(1.4);
+    filter: brightness(0.5); 
+    object-fit: cover;
+}
+
+#ConfBA {
+    position: absolute;
+    top: 40%;
+    margin-right: 55px;
+    padding: 0 50px;
+}
+
+#conocoradores {
+    margin-top:10px;
+    text-align: center;
+}
+
+#cardsoradores p {
+    font-size: small;
+    line-height: 150%;
+}
+
+#ignite {
+    text-decoration: underline dotted;
+    color: inherit;
+}
+
+.form-floating {
+    font-size: 20px;
+}
+
+.enviar {
+    background-color: rgb(132, 208, 34);
+}
+
+footer {
+    background-color: rgb(9, 76, 109);
+}
+footer li {
+    text-align: center;
+}
