@@ -1,17 +1,15 @@
+// función para reestablecer a 0 el <p> que muestra el total a pagar al presionar el botón Borrar
 function restTotal() {
     document.getElementById('aPagar').innerHTML = 'Total a pagar:  $ ';  
   }
 
+// calcuclo del precio total de acuerdo a la categoría seleccionada  
 function precioTotal() {
-    let dcto;
+    let dcto; //en realidad es el valor total menos el descuento correspondiente, más sencillo a los fines del cálculo
     let total;
     let cantidad = document.getElementById("qty").value;
     let categ = document.getElementById("categoria").value;
     const TICKET = 200;
-
-    console.log ("Categoría" + " " + categ);
-    console.log ("Cantidad" + " " + cantidad);
-    
 
     if (categ == "1") {
         dcto = 1;
@@ -24,14 +22,10 @@ function precioTotal() {
     } else {
         alert("Debe seleccionar una categoria.");
     }
-    
-
-    // console.log ("Descuento después del if" + " " + dcto);
-    
+      
     if (cantidad !="0" && categ != "0")  {
          total = TICKET * cantidad * dcto;
          document.getElementById('aPagar').innerHTML = "Total a pagar:  $ "+total;
-     } //else {
-    //      alert("Debe completar todos los campos.");
-    //     }
-    }
+     }
+ }
+    
